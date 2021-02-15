@@ -1,0 +1,30 @@
+
+/* the styles for the elements */
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+/* the styles for the header */ 
+headerh2 {
+	font-size: 170%
+	color #800000;
+	text-align: 30 pixals;
+}
+headerh3 {
+	font-size: 130%;
+	font-style: italic;
+	text-align: 30 pixals;
+}
+/* the styles for the main section */
+main { clear: left;  }
+mainhl { font-size: 150%; }
+mainh2 { font-size: 130%; color: #800000; }
+mainh3 {font-size: 105%;  }
+/* the styles for the footer */
+p {
+	font-size: 80%;
+	text-align: center;
+}
+
+
