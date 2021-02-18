@@ -16,7 +16,7 @@ header h3 {
 	text-align: 30 px;
 }
 #shadow {
-	text-shadow: 1px 2px maroon;
+	text-shadow: 1px 2px 10px maroon;
 }
 
 header img {
