@@ -1,144 +1,196 @@
-html {
-	background-color:white;
-}
-/* the reset selector */
+/* Universal Selector */
 * {
-	margin: 0%;
-	padding: 0%;
-}
-/* the styles for the elements */
-body {
-	font-family: Arial, Helvetica, sans-serif;
-	font-size: 100%;
-	width: 800px;
-	margin: 0px auto;
-	border: 3px solid #931420;
-	background-color: #fffded;
-}
-/* the styles for the header */ 
-header {
-	border-bottom: solid;
-	border-width: 3px;
-	border-color: #931420;
-	padding-top: 1.5em;
-	padding-bottom: 2em;
-	background-image: linear-gradient(#f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-}
-header h2 {
-	padding-top: 1.5px;
-	font-size: 170%
-	color #800000;
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic;
-	text-align: 30px;
-	padding-bottom: 2px;
-}
-#shadow {
-	text-shadow: 1px 2px 10px maroon;
-}
-
-header img {
-	float: left;
-	padding-right: 30px;
-	padding-left: 30px;
-	padding-bottom: 1em;
-}
-/* the styles for the main section */
-main { clear: left;  
-	width: 100%;
-}
-.columnone {
-	width: 525px;
-	float: right;
-	padding-right: 20px;
-	padding-left: 20px;
-	padding-bottom: 20px;
-}
-section h2 { 
-	font-size: 130%; 
-	color: maroon; 
-	padding-top: .5em;
-	padding-bottom: .25em;
-}
-section p {
-	padding-bottom: .5em;
-}
-section blockquote {
-	padding-right: 2em;
-	padding-left: 2em;
-	font-style: italic;
-}
-section h1 {
-	font-size: 150%;
-	padding-top: .5em;
-	padding-bottom: .25em;
-	margin-top: 0%;
-	margin-bottom: 0%;
-
-}
-article {
-	float: right;
-	padding-top: .5em;
-	padding-bottom: .5em;
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-}
-article h2 {
-	padding-top: 0em;
-}
-article img {
-	float: right;
-	margin: 5px;
-	border: 1px;
-	border-color: black;
-}
-article h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
-}
-section ul {
-	padding-bottom: .25em;
-	padding-left: 1.25em;
-}
-section li {
-	padding-bottom: .35em;
-}
-aside {
-	width: 215px;
-	float: left;
-	padding-left: 20px;
-	padding-bottom: 20px;
-}
-aside h2 {
-	font-size: 105%;  
-	font-style: bold;
-	padding-bottom: .25em;
-	color: maroon;
-}
-aside h3 {
-	font-size: 105%;  
-	font-style: bold;
-	padding-bottom: .25em;
-}
-
-/* the styles for the footer */
-footer {
-	border: 3px solid #931420;
-	background-color: #931420;
-	clear: both;
-}
-footer p {
-	font-size: 75%;
-	text-align: center;
-	color: white;
-	padding-top: 1em;
-	padding-bottom: 1em;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 .clearfix::after {
-    clear: both;
-    content: "";
-	display: table;
+  content: "";
+  clear: both;
+  display: table;
+}
+html {
+  background-image: url("../images/paper.gif");
+}
+body {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 5px solid steelblue;
+    box-shadow: 5px 5px 8px gray;
+}
+h1 {
+  font-size: 250%; 
+  margin-left: 15px;
+  margin-top: 15px;
+}
+header { 
+      border-bottom: 5px solid steelblue;
+      background-image: linear-gradient(white, steelblue);
+}
+header h2 {
+    font-size: 250%;
+    color: steelblue; 
+    font-style: italic;
+    text-shadow: 2px 2px 15px gray;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+header h3 {
+  font-size: 150%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+header img {
+  float: left;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+main {
+  clear: both;
 }
 
+/* Horizontal Menu Bar Style */
+#nav_menu ul {
+  list-style: none;
+  text-align: center;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 8px 0;
+  background-color: #afeeee;
+}
+#nav_menu ul li {
+  display: inline;
+  padding: 5px 20px;
+  border-right: 3px solid black;
+}
+#nav_menu #last {
+  border-right: none;
+}
+#nav_menu ul li a {
+  text-decoration: none;
+  font-weight: bold;
+}
+#nav_menu ul li a:hover {
+  color: red;
+}
+/* Vertical Navigation List */
+#nav_list ul {
+  list-style: none;
+  margin-left: 20px;
+}
+#nav_list ul li {
+  border: 2px solid black;
+  width: 90%;
+}
+#nav_list ul li a {
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: lightsteelblue;
+  padding: .5em;
+  color: black;
+}
+#nav_list ul li a:hover, #nav_list ul li a:focus {
+  background-color: steelblue;
+  color: white;
+}
+section h2, section h3, aside h2 {
+    font-size: 150%;
+    margin: 15px;
+}
+section p {
+  margin: 15px;
+}
+section blockquote {
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 90%;
+  color: navy;
+  border-left: 3px solid maroon;
+  padding: 5px;
+  background-color: khaki;
+}
+section h2{
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 15px;
+  font-size: 250%;
+}
+section h3 { 
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+section p {
+  margin-left: 20px;
+}
+/* Link colors section */
+/* unvisited link */
+a:link {
+  color: maroon;
+}
+  /* visited link */
+ a:visited {
+    color: maroon;
+  }
+  /* mouse over link */
+ a:hover {
+    color: steelblue;
+}
+  /* selected link */
+ a:active {
+    color: steelblue;
+}
+aside a {
+  font-weight:bold;
+}
+/* unsaved links */
+/* link colors for aside */
+/*unvisited links */
+aside a:link {
+color: steelblue;
+}
+/* visted link */
+aside a:visited {
+  color: steelblue;
+}
+/* mouse over link */
+ aside a:hover {
+  color: maroon;
+}
+/* selected link */
+ aside a:active {
+  color: maroon;
+ }
+.homesection {
+  width: 65%;
+  float: right;
+}
+.sidebar {
+  width: 33%;
+  padding-top: 20px;
+}
+.sidebar h2 {
+  font-size: 180%;
+  color: maroon;
+}
+li {
+  margin-top: 5px;
+}
+footer {
+  background-color: steelblue;
+  margin-top: 10%;
+  clear: both;
+}
+footer p {
+  font-size: 75%;
+  text-align: center;
+  color: white;
+  padding: 25px;
+  font-weight: bold;
+  font-variant: small-caps;
+}
