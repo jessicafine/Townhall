@@ -7,6 +7,16 @@
 	<link rel="shortcut icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="styles/normalize.css">
 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="stylesheet" href="styles/slicknav.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Slicknav -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+	<script type="text/javascript">
+    $(document).ready(function(){
+	$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+    </script>
 </head>
 	
 <body>
@@ -19,6 +29,7 @@
 	</header>	
 	<main>
 <!--[Navigation Menu]>!-->
+<nav id="mobilemenu"></nav>
 <nav id="nav_menu">
 	<ul>
 		<li><a href="index.html">Home</a></li>
@@ -59,9 +70,9 @@
 
 		<h2>Our Ticket Packages</h2>
 
-			<ul> <il> Season Package: $95 </il></ul>
-			<ul> <il> Package: $200 </il></ul>
-			<ul> <il> Single Speaker: $25 </il></ul>
+			<ul> <li> Season Package: $95 </li></ul>
+			<ul> <il> Package: $200 </li></ul>
+			<ul> <li> Single Speaker: $25 </li></ul>
 	</section>	
 	
 	<aside>
