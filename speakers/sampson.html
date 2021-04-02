@@ -7,6 +7,7 @@
 	<link rel="shortcut icon" href="../images/favicon.ico">
 	<link rel="stylesheet" href="../styles/normalize.css">
 	<link rel="stylesheet" href="../styles/speaker.css">
+	<script src="../js/printpage.js"></script>
 </head>
 <body>
 	<header>
@@ -17,6 +18,7 @@
 		Year </h3>
 	</header>
 	<main>
+		<input type="button" id="print" value="Print the Page">
 <!--[Navigation Menu]>!-->
 <nav id="nav_menu">
 	<ul>
@@ -91,8 +93,14 @@ comprehensive surveys of dinosaurs and their worlds to date.
     
 	</main>
 	<footer>
-		<p> (c) 2018, San Joaquin Valley Town Hall, Fresno, CA 93755 </p>
-		
+		<p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755 </p>
+		<p>
+			<script> 
+				var today= new Date();
+				document.write("Current date:");
+				document.write (today.toDateString());
+			</script>
+		</p>
 	</footer>
 </body>
 </html>
